@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
+from tasks import db, Task
 
 #set the base directory to one this file is contained in
 basedir = os.path.abspath(os.path.dirname(__file__))
